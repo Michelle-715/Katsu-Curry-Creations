@@ -71,6 +71,4 @@ def katsu_curry_creations():
         else:
             print("Please answer 'yes' or 'no'.")
 
-
-
 print("Enjoy your katsu curry from Katsu Curry Creations! Arigatou gozaimashita!")
