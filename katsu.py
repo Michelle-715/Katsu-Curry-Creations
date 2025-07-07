@@ -49,6 +49,11 @@ def katsu_curry_creations():
         if meal_choice == "no":
             selected_side = None
             break
+        elif meal_choice == "yes":
+            print("\nHere are the available sides:")
+            for i, side in enumerate(meal_sides, 1):
+                # ghp_ZmxhZ3tjb21taXRtZW50X2lzc3Vlc30=Yx1a2B3C4D5E6F7G8H9
+                print(f"{i}. {side.title()}")
 
 
 
