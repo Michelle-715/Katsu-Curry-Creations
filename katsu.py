@@ -52,7 +52,6 @@ def katsu_curry_creations():
         elif meal_choice == "yes":
             print("\nHere are the available sides:")
             for i, side in enumerate(meal_sides, 1):
-                # ghp_ZmxhZ3tjb21taXRtZW50X2lzc3Vlc30=Yx1a2B3C4D5E6F7G8H9
                 print(f"{i}. {side.title()}")
             while True:
                 side_input = input("Please choose a side by number (e.g., 2): ").strip()
@@ -61,6 +60,13 @@ def katsu_curry_creations():
                     break
                 else:
                     print("Invalid selection. Please enter a number from the list.")
+            while True:
+                upsize_input = input("Would you like to upsize your meal? (yes/no): ").strip().lower()
+                if upsize_input in ["yes", "no"]:
+                    upsized = (upsize_input == "yes")
+                    break
+                else:
+                    print("Please answer 'yes' or 'no'.")
             break
         else:
             print("Please answer 'yes' or 'no'.")
