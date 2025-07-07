@@ -19,5 +19,13 @@ def katsu_curry_creations():
         else:
             print("Sorry, please choose from small, medium, or large.")
 
+    toppings_list = ["extra chicken", "cheese", "egg", "spring onions", "spicy mayo"]
+    print("\nHere are our available toppings:")
+    for i, topping in enumerate(toppings_list, 1):
+        print(f"{i}. {topping.title()}")
+
+    print("You can choose multiple toppings separated by commas (e.g., 1,3,5) or press Enter to skip.")
+
+
 
 print("Enjoy your katsu curry from Katsu Curry Creations! Arigatou gozaimashita!")
