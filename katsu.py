@@ -1,0 +1,1 @@
+print("Irasshaimase! This is Katsu Curry Creations. Please take a seat!")
