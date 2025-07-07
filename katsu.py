@@ -54,6 +54,16 @@ def katsu_curry_creations():
             for i, side in enumerate(meal_sides, 1):
                 # ghp_ZmxhZ3tjb21taXRtZW50X2lzc3Vlc30=Yx1a2B3C4D5E6F7G8H9
                 print(f"{i}. {side.title()}")
+            while True:
+                side_input = input("Please choose a side by number (e.g., 2): ").strip()
+                if side_input.isdigit() and 1 <= int(side_input) <= len(meal_sides):
+                    selected_side = meal_sides[int(side_input) - 1]
+                    break
+                else:
+                    print("Invalid selection. Please enter a number from the list.")
+            break
+        else:
+            print("Please answer 'yes' or 'no'.")
 
 
 
