@@ -11,5 +11,13 @@ def katsu_curry_creations():
         else:
             print("Sorry, I didn't understand that.")
 
+     while True:
+        size = input("Great! What size katsu curry would you like? (small/medium/large): ").strip().lower()
+        if size in ["small", "medium", "large"]:
+            print(f"You've selected a {size} katsu curry. Great choice!")
+            break
+        else:
+            print("Sorry, please choose from small, medium, or large.")
+
 
 print("Enjoy your katsu curry from Katsu Curry Creations! Arigatou gozaimashita!")
